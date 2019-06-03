@@ -10,9 +10,8 @@ public class Exercice2 {
 			if (nb % i == 0)
 				somme += i;
 		}
-		if (nb == somme)
-			return true;
-		return false;
+
+		return (nb == somme);
 	}
 
 	public static void main(String[] args) {
