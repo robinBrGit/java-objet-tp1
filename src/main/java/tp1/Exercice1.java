@@ -14,6 +14,8 @@ public class Exercice1 {
 	}
 
 	public static boolean isNbPremier(int nb) {
+		if (nb <= 1)
+			return false;
 		boolean premier = true;
 		int diviseur = 2;
 		while (premier && diviseur < nb) {
@@ -27,8 +29,8 @@ public class Exercice1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(isNbPremier(11));
-		System.out.println(isNbPremier(78));
-		System.out.println(isNbPremier(35));
+		System.out.println(isNbPremier(13));
+		System.out.println(isNbPremier(23));
 	}
 
 }
