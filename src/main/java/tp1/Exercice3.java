@@ -3,11 +3,9 @@ package tp1;
 public class Exercice3 {
 
 	public static boolean isPalindrome(String chaine) {
-		if (chaine.length() % 2 == 0)
-			return false;
 
 		chaine = chaine.toUpperCase();
-		for (int i = 0; i < chaine.length(); i++) {
+		for (int i = 0; i < chaine.length() / 2; i++) {
 			if (chaine.charAt(i) != chaine.charAt(chaine.length() - (i + 1)))
 				return false;
 		}
